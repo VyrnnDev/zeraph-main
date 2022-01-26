@@ -6,7 +6,7 @@
 
     "target": "ESNext",
 
-    "moduleResolution": "node",
+    "moduleResolution": "Node",
 
     /**
       * Type Script settings
@@ -14,9 +14,9 @@
 
     "outDir": "lib",
 
-    "declaration": true,
+    "composite": true,
+
     "declarationDir": "lib/@types",
-    "emitDeclarationOnly": true,
 
     /**
       * Folder settings
@@ -47,11 +47,6 @@
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true
   },
-  "settings": {
-    "import/resolver": {
-      "typescript": {}
-    },
-  },
-  "include": [ "src/**/*" ],
+  "include": [ "src/**/*", "@types/*" ],
   "exclude": [ "node_modules", "lib" ]
 }

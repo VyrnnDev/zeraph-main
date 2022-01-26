@@ -1,8 +1,8 @@
-import { IMiddleware } from 'Misc/Http/Middleware/IMiddleware';
+import { IMiddleware, IRoute } from '@vyrnn:Zeraph/Main/Http';
 
 import { Request, Response } from 'Misc/Http/Protocols';
 
-export class Route {
+export class Route implements IRoute<Request, Response> {
   public url: string;
   public method: 'GET' | 'POST' | 'PUT' | 'DELETE';
 

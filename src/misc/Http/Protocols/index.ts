@@ -1,6 +1,8 @@
 import { FastifyReply, FastifyRequest } from 'fastify';
 
-export class Request {
+import { IRequest, IResponse } from '@vyrnn:Zeraph/Main/Http';
+
+export class Request implements IRequest {
   private request!: FastifyRequest;
 
   constructor(
@@ -44,7 +46,7 @@ export class Request {
   };
 }
 
-export class Response {
+export class Response implements IResponse {
   private response!: FastifyReply;
 
   constructor(

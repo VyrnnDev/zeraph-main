@@ -1,12 +1,10 @@
-/// <reference path="../../../@types/index.ts" />
-
 import Fastify, { FastifyInstance, FastifyReply, FastifyRequest } from 'fastify';
 
 import { IHttpServer, IMiddleware } from '@vyrnn:Zeraph/Main/Http';
 
 import { Router } from 'Misc/Http/Router';
 
-import { Exception } from '../../exceptions/Exception';
+import { Exception } from 'Exceptions/Exception';
 
 export class HttpServer implements IHttpServer {
   protected instance!: FastifyInstance;
