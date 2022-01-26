@@ -1,0 +1,57 @@
+{
+  "compilerOptions": {
+    /**
+      * Java Script settings
+      */
+
+    "target": "ESNext",
+
+    "moduleResolution": "node",
+
+    /**
+      * Type Script settings
+      */
+
+    "outDir": "lib",
+
+    "declaration": true,
+    "declarationDir": "lib/@types",
+    "emitDeclarationOnly": true,
+
+    /**
+      * Folder settings
+      */
+
+    "baseUrl": "./src",
+
+    /**
+      * Paths settings
+      */
+
+    "paths": {
+      "Cache/*": [ "cache/*" ],
+      "Exceptions/*": [ "exceptions/*" ],
+      "Contracts/*": [ "contracts/*" ],
+      "Misc/*": [ "misc/*" ],
+      "Storage/*": [ "storage/*" ]
+    },
+
+    /**
+      * Project settings
+      */
+
+    "strict": true,
+    "skipLibCheck": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    },
+  },
+  "include": [ "src/**/*" ],
+  "exclude": [ "node_modules", "lib" ]
+}
